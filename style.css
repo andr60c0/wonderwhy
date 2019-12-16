@@ -1,4 +1,8 @@
 /***** GENERAL INDSTILLINGER START *****/
+body {
+    margin: 0;
+}
+
 img,
 iframe {
     width: 100%;
@@ -76,6 +80,46 @@ header a:visited {
 
 /***** HEADER SLUT *****/
 
+/***** FOOTER START *****/
+footer {
+    margin-top: 30px;
+    width: 100vw;
+    height: 100px;
+    background-color: #000000;
+    color: white;
+}
+
+footer .col_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .col {
+    flex-grow: 1;
+    flex-basis: 150px;
+}
+
+
+footer p,
+footer a,
+footer h2 {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/***** FOOTER SLUT *****/
+
 
 
 
@@ -93,6 +137,26 @@ header a:visited {
 /***** Shows sektion slutter *****/
 
 /****** PR and funding sektion starter *****/
+#pr_funding .sectionwrapper {
+    padding: 0 25px;
+}
+
+#pr_funding h1 {
+    margin-bottom: 12px;
+}
+
+#pr_funding h2 {
+    margin-bottom: 0;
+}
+
+#pr_funding .col_bottom h2 {
+    margin-bottom: 0;
+}
+
+#pr_funding p {
+    margin-top: 0;
+}
+
 /****** PR and funding sektion slutter *****/
 
 /***** About sektion starter *****/
@@ -121,6 +185,10 @@ header a:visited {
     text-decoration: none;
 }
 
+#about a:hover {
+    color: steelblue;
+}
+
 /***** About sektion slutter *****/
 
 /***** SEKTIONER SLUT *****/
@@ -129,9 +197,8 @@ header a:visited {
 @media only screen and (min-width: 770px) {
 
     /***** GENERAL INDSTILLINGER START *****/
-
-    body {
-        margin: 0 200px 0 200px;
+    section {
+        margin: 0 200px;
     }
 
 
@@ -142,26 +209,26 @@ header a:visited {
     header {
         position: fixed;
         background-color: #ffffff;
-        width: 100%;
         top: 0;
-
-        padding: 20px;
+        padding: 20px 0;
+        width: 100%;
 
     }
 
     header nav {
+        padding: 0 200px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 0.5rem 0 0;
+        justify-content: center;
     }
 
     header nav a {
         border: 1px solid;
         border-color: #ffffff;
         background-color: #ffffff;
-        padding: 20px;
-        margin: 4px 4px 4px 4px;
+        padding: 16px;
+        margin: 4px;
         text-decoration: none;
     }
 
@@ -183,13 +250,27 @@ header a:visited {
     }
 
     #logo {
-        width: 25%;
+        width: 20%;
+        padding: 0 40px;
     }
 
 
 
 
     /***** HEADER SLUT *****/
+
+    /***** FOOTER START *****/
+
+
+
+
+
+
+
+
+
+
+    /***** FOOTER SLUT *****/
 
     /***** SEKTIONER START *****/
 
@@ -399,6 +480,30 @@ header a:visited {
     }
 
     /***** About sektion slutter *****/
+
+    /***** PR & FUNDING starter ****/
+    #pr_funding .col_top,
+    #pr_funding .col_bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #pr_funding .col {
+        flex-grow: 1;
+        flex-basis: 300px;
+        margin-bottom: -5px;
+    }
+
+    #pr_funding h1 {
+        margin-top: 160px;
+        margin-bottom: 12px;
+    }
+
+    #pr_funding .col_bottom {
+        margin-top: 60px;
+    }
+
+    /***** PR & FUNDING slutter ****/
 
     /***** SEKTIONER SLUT *****/
 
