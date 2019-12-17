@@ -8,6 +8,8 @@
     <title>WONDERWHY</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oqk1btd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/awq5rwn.css">
 </head>
 
 <body>
@@ -15,54 +17,115 @@
 
 
         <nav>
-            <a href="artists.html">ARTISTS</a>
+            <div class="sectionwrapper">
+                <div class="col">
+                    <div id="menuknap">☰</div>
+                </div>
+                <ul id="menu" class="hidden">
+                    <a href="artists.html">ARTISTS</a>
 
-            <a href="shows.html">SHOWS</a>
-            <img src="photos/logo.png" id="logo" alt="logo" />
-            <a href="pr_and_funding.html">PR AND FUNDING</a>
+                    <a href="shows.html">SHOWS</a>
 
-            <a href="about.html">ABOUT</a>
+                    <a href="pr_and_funding.html">PR/FUNDING</a>
 
+                    <a href="about.html">ABOUT</a>
+                </ul>
+                <div class="col">
+                    <img src="photos/logo.png" id="logo" alt="logo" />
+                </div>
+            </div>
         </nav>
 
     </header>
     <section id=artists>
-        <h1>Artists</h1>
+        <h1>ARTISTS</h1>
         <div class="sectionwrapper">
             <div class="col">
-
-                <img src="photos/blaest.png" alt="blæst" class="image">
-                <div class="artist1">
-                    <div class="text"><b>BLÆST</b></div>
+                <img src="photos/blaest.jpg" alt="blæst">
+                <div class="overlay">
+                    <div id="text">
+                        <p>BLÆST</p>
+                    </div>
+                    <h2>BLÆST</h2>
                 </div>
-
-            </div>
-            <div class="col">
-                <img src="photos/elba.png" alt="elba">
-            </div>
-            <div class="col">
-                <img src="photos/ernest.png" alt="ernest">
             </div>
 
             <div class="col">
-                <img src="photos/excelsior.png" alt="excelsior">
-            </div>
-            <div class="col">
-                <img src="photos/holmogmoldrup.png" alt="holm&møldrup">
-            </div>
-            <div class="col">
-                <img src="photos/mrexen.png" alt="m rexen">
+                <a href="elba.html">
+                    <img src="photos/elba.jpg" alt="elba">
 
+                    <div class="overlay">
+                        <div id="text">
+                            <p>ELBA</p>
+                        </div>
+                        <h2>ELBA</h2>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <img src="photos/girlcrush.png" alt="girlcrush">
-            </div>
-            <div class="col">
-                <img src="photos/marcfaccini.png" alt="marc facchini">
-            </div>
-            <div class="col">
-                <img src="photos/rebeccalou.png" alt="rebecca lou">
 
+            <div class="col">
+                <img src="photos/ernest.jpg" alt="ernest">
+                <div class="overlay">
+                    <div id="text">
+                        <p>ERNEST</p>
+                    </div>
+                    <h2>ERNEST</h2>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="photos/excelsior.jpg" alt="excelsior">
+                <div class="overlay">
+                    <div id="text">
+                        <p>EXCELSIOR</p>
+                    </div>
+                    <h2>EXCELSIOR</h2>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/holm_moldrup.jpg" alt="holm&møldrup">
+                <div class="overlay">
+                    <div id="text">
+                        <p>HOLM & MØLDRUP</p>
+                    </div>
+                    <h2>HOLM & MØLDRUP</h2>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/m_rexen.jpg" alt="m rexen">
+                <div class="overlay">
+                    <div id="text">
+                        <p>M. REXEN</p>
+                    </div>
+                    <h2>M. REXEN</h2>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/girlcrush.jpg" alt="girlcrush">
+                <div class="overlay">
+                    <div id="text">
+                        <p>GIRLCRUSH</p>
+                    </div>
+                    <h2>GIRLCRUSH</h2>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/marc_facchini.jpg" alt="marc facchini">
+                <div class="overlay">
+                    <div id="text">
+                        <p>MARC FACCINI</p>
+                    </div>
+                    <h2>MARC FACCINI</h2>
+                </div>
+            </div>
+            <div class="col">
+                <img src="photos/rebecca_lou.jpg" alt="rebecca lou">
+                <div class="overlay">
+                    <div id="text">
+                        <p>REBECCA LOU</p>
+                    </div>
+                    <h2>REBECCA LOU</h2>
+                </div>
 
             </div>
         </div>
@@ -70,8 +133,27 @@
     </section>
 
 
-    <script src=""></script>
+    <script src="artists.js"></script>
+    <footer>
+        <div class="col_bottom">
+            <div class="col">
+                <h2>CONTACT</h2>
+                <p>Phone: +45 50 722 853<br>
+                    Mail: <a href="mailto:contact@wonderwhy.dk"> contact(at)wonderwhy.dk</a></p>
+            </div>
+            <div class="col">
+                <h2>FOLLOW</h2>
+                <div class="col">
+                    <a href="https://www.facebook.com/WonderwhyMusicCompany/" target="_blank"><img src="photos/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="photos/spotify.svg" alt="Spotify"></a>
+                    <a href="https://www.youtube.com/user/Wonderwhymusic" target="_blank"><img src="photos/youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="photos/instagram.svg" alt="Instagram"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
 </body>
-<footer>WONDERWHY</footer>
 
 </html>

@@ -1,4 +1,8 @@
 /***** GENERAL INDSTILLINGER START *****/
+* {
+    box-sizing: border-box
+}
+
 body {
     margin: 0;
 }
@@ -12,7 +16,7 @@ iframe {
 
 h1,
 h2 {
-    font-family: halyard-display, sans-serif;
+    font-family: titling-gothic-fb-condensed, sans-serif;
 
     font-weight: 700;
 
@@ -22,14 +26,26 @@ h2 {
 }
 
 h2 {
+    font-family: titling-gothic-fb-condensed, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
     font-size: 1.3em;
+}
+
+h3 {
+    font-family: titling-gothic-fb-condensed, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    font-size: 1em;
 }
 
 p,
 nav,
 a,
-h3,
-h4,
 footer,
 .text,
 table {
@@ -41,6 +57,14 @@ table {
 #logo {
     width: 25%;
 }
+
+
+
+
+
+
+
+
 
 /***** GENERAL INDSTILLINGER SLUT *****/
 
@@ -78,28 +102,55 @@ header a:visited {
     font-size: 1rem;
 }
 
+
+
+
+
+
+
+
 /***** HEADER SLUT *****/
 
 /***** FOOTER START *****/
 footer {
     margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100vw;
-    height: 100px;
+    height: 100%;
     background-color: #000000;
     color: white;
 }
 
 footer .col_bottom {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
+
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /*justify-content: center;*/
     align-items: center;
 }
 
-footer .col {
-    flex-grow: 1;
-    flex-basis: 150px;
+footer .col_bottom .col {
+    padding: 0;
+    /*    padding: 0 40px;*/
+}
+
+footer .col_bottom .col .col:last-child {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+footer .col_bottom .col .col:last-child img {
+    height: 30px;
+    width: 30px;
+    padding: 4px 6px 10px 0;
 }
 
 
@@ -109,6 +160,18 @@ footer h2 {
     margin: 0;
     color: white;
     text-decoration: none;
+}
+
+footer h2 {
+    font-size: .8rem;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+footer a:hover {
+    color: steelblue;
 }
 
 
@@ -121,18 +184,256 @@ footer h2 {
 /***** FOOTER SLUT *****/
 
 
+/***** Landing Page starter *****/
+#landing_page .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#landing_page .sectionwrapper .col_top {
+    overflow-x: hidden;
+}
+
+#landing_page .hide {
+    display: none;
+}
+
+#landing_page .sectionwrapper .col_bottom {
+    padding: 0 25px;
+}
+
+#landing_page .elba_slide,
+#landing_page .blaest_slide,
+#landing_page .holm_slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 130vw;
+}
+
+#landing_page .elba_slide {
+    background-image: url(photos/elba.jpg);
+    background-position: 56%;
+}
+
+#landing_page .blaest_slide {
+    background-image: url(photos/blaest.jpg);
+    background-position: 65%;
+}
+
+#landing_page .holm_slide {
+    background-image: url(photos/holm_moldrup.jpg);
+    background-position: 63% 0;
+}
+
+
+
+
+
+
+
+/***** Landing Page slutter *****/
 
 
 /***** Artists sektion starter *****/
+#artists .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#artists .col {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#artists p {
+    display: none;
+}
+
+#artists h2 {
+    margin: 8px 0 35px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** Artists sektion slutter *****/
 
 /***** Enkelte artist sider starter *****/
+#blaest .image,
+#elba .image,
+#ernest .image,
+#excelsior .image,
+#girlcrush .image,
+#holm .image,
+#rexen .image,
+#marcfacchini .image,
+#rebeccalou .image {
+    margin-top: 120px;
+    margin-right: 50px;
+}
+
+#blaest .video,
+#elba .video,
+#ernest .video,
+#excelsior .video,
+#girlcrush .video,
+#holm .video,
+#rexen .video,
+#marcfacchini .video,
+#rebeccalou .video {
+    margin-right: 50px;
+}
+
+#blaest .sectionwrapper,
+#elba .sectionwrapper,
+#ernest .sectionwrapper,
+#excelsior .sectionwrapper,
+#girlcrush .sectionwrapper,
+#holm .sectionwrapper,
+#rexen .sectionwrapper,
+#marcfacchini .sectionwrapper,
+#rebeccalou .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blaest .col,
+#elba .col,
+#ernest .col,
+#excelsior .col,
+#girlcrush .col,
+#holm .col,
+#rexen .col,
+#marcfacchini .col,
+#rebeccalou .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+#blaest .col h1,
+#elba .col h1,
+#ernest .col h1,
+#excelsior .col h1,
+#girlcrush .col h1,
+#holm .col h1,
+#rexen .col h1,
+#marcfacchini .col h1,
+#rebeccalou .col h1 {
+    margin: 10px 0 30px 0;
+
+}
+
+#blaest .col h3,
+#elba .col h3,
+#ernest .col h3,
+#excelsior .col h3,
+#girlcrush .col h3,
+#holm .col h3,
+#rexen .col h3,
+#marcfacchini .col h3,
+#rebeccalou .col h3 {
+    margin: 10px 0 0px 0;
+
+}
+
+#blaest .col p,
+#elba .col p,
+#ernest .col p,
+#excelsior .col p,
+#girlcrush .col p,
+#holm .col p,
+#rexen .col p,
+#marcfacchini .col p,
+#rebeccalou .col p {
+    margin: 0px 0 20px 0;
+
+}
+
+
+#blaest .so_me img,
+#elba .so_me img,
+#ernest .so_me img,
+#excelsior .so_me img,
+#girlcrush .so_me img,
+#holm .so_me img,
+#rexen .so_me img,
+#marcfacchini .so_me img,
+#rebeccalou .so_me img {
+    width: 35px;
+    margin: 10px 5px 30px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** Enkelte artist sider slutter *****/
 
 /***** Shows sektion starter *****/
 #shows .sectionwrapper {
     margin-top: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***** Shows sektion slutter *****/
 
@@ -191,12 +492,36 @@ footer h2 {
 
 /***** About sektion slutter *****/
 
+
+/* ANIMATIONER */
+
+.hidden {
+    transform: translateX(-100%);
+    animation-duration: 0.3s;
+}
+
+#menuknap {
+    display: inline-block;
+}
+
+#menu {
+    list-style-type: none;
+
+}
+
 /***** SEKTIONER SLUT *****/
 
 
 @media only screen and (min-width: 770px) {
 
     /***** GENERAL INDSTILLINGER START *****/
+    #about,
+    #pr_funding,
+    #artists,
+    #shows {
+        margin: 0 200px;
+    }
+
     section {
         margin: 0 200px;
     }
@@ -217,6 +542,7 @@ footer h2 {
 
     header nav {
         padding: 0 200px;
+        margin-left: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -250,7 +576,7 @@ footer h2 {
     }
 
     #logo {
-        width: 20%;
+        width: 40%;
         padding: 0 40px;
     }
 
@@ -260,19 +586,49 @@ footer h2 {
     /***** HEADER SLUT *****/
 
     /***** FOOTER START *****/
+    footer .col_bottom {
+        padding: 0 15px;
+        justify-content: center;
+    }
 
-
-
-
-
-
-
-
-
+    footer .col_bottom .col {
+        padding: 0 40px;
+    }
 
     /***** FOOTER SLUT *****/
 
     /***** SEKTIONER START *****/
+
+    /***** LANDING PAGE START *****/
+    #landing_page .sectionwrapper {
+        margin-top: 120px;
+    }
+
+    #landing_page .elba_slide,
+    #landing_page .blaest_slide,
+    #landing_page .holm_slide {
+        height: 75vh;
+        width: 88vw;
+        background-size: cover;
+        background-position: 75% 0%;
+    }
+
+    #landing_page .holm_slide {
+        background-position: 65% 0%;
+        width: 72vw;
+    }
+
+    #landing_page .blaest_slide {
+        background-position: 75% 0%;
+        width: 75vw;
+    }
+
+    #landing_page .sectionwrapper .col_bottom {
+        padding: 0;
+    }
+
+
+    /***** LANDING PAGE SLUT *****/
 
     /***** Artists sektion starter *****/
 
@@ -286,9 +642,76 @@ footer h2 {
     #artists .col {
         flex-grow: 1;
         flex-basis: 300px;
+        margin-bottom: -4px;
+    }
+
+    #artists h2 {
+        display: none;
+    }
+
+    #artists #text {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+    }
+
+    #artists p {
+        font-family: titling-gothic-fb-condensed, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.5rem;
+
+
+    }
+
+    #artists p {
+        display: block;
+    }
+
+
+    #artists .col {
+        position: relative;
+        width: 50%;
+    }
+
+    #artists .col:hover .overlay {
+        opacity: 1;
+    }
+
+    #artists .col:hover .text {
+        opacity: 1;
+    }
+
+    #artists .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #artists .col:hover img {
+        opacity: 0.3;
+        transition: .5s ease;
+    }
+
+    #artists .overlay {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
     }
 
     /*Hover funktion start*/
+
+    /*
     #artists .image {
         opacity: 1;
         display: block;
@@ -320,15 +743,16 @@ footer h2 {
         font-size: 30px;
         padding: 16px 32px;
     }
-
+*/
     /*Hover funktion slut*/
+
 
 
 
     /***** Artists sektion slutter *****/
 
     /***** Enkelte artist sider starter *****/
-    #blaest .image,
+    /*    #blaest .image,
     #elba .image,
     #ernest .image,
     #excelsior .image,
@@ -337,6 +761,20 @@ footer h2 {
     #rexen .image,
     #marcfacchini .image,
     #rebeccalou .image {
+        margin-top: 120px;
+        margin-right: 50px;
+    }
+*/
+
+    #blaest .sectionwrapper,
+    #elba .sectionwrapper,
+    #ernest .sectionwrapper,
+    #excelsior .sectionwrapper,
+    #girlcrush .sectionwrapper,
+    #holm .sectionwrapper,
+    #rexen .sectionwrapper,
+    #marcfacchini .sectionwrapper,
+    #rebeccalou .sectionwrapper {
         margin-top: 120px;
         margin-right: 50px;
     }
@@ -366,7 +804,7 @@ footer h2 {
         flex-wrap: wrap;
     }
 
-    #blaest .col,
+    /*    #blaest .col,
     #elba .col,
     #ernest .col,
     #excelsior .col,
@@ -376,22 +814,102 @@ footer h2 {
     #marcfacchini .col,
     #rebeccalou .col {
         flex-grow: 1;
-        flex-basis: 300px;
+        flex-basis: 500px;
+        margin: 0 20px 0 0;
+
+    }
+    */
+
+    #blaest h1,
+    #elba h1,
+    #ernest h1,
+    #excelsior h1,
+    #girlcrush h1,
+    #holm h1,
+    #rexen h1,
+    #marcfacchini h1,
+    #rebeccalou h1 {
+        margin: 0 0 20px 0;
 
     }
 
-    #blaest .col h1,
-    #elba .col h1,
-    #ernest .col h1,
-    #excelsior .col h1,
-    #girlcrush .col h1,
-    #holm .col h1,
-    #rexen .col h1,
-    #marcfacchini .col h1,
-    #rebeccalou .col h1 {
-        margin-top: 120px;
+    #blaest p,
+    #elba p,
+    #ernest p,
+    #excelsior p,
+    #girlcrush p,
+    #holm p,
+    #rexen p,
+    #marcfacchini p,
+    #rebeccalou p {
+        font-size: 0.9em;
+        line-height: 19px;
 
     }
+
+    #blaest .col_right .so_me img,
+    #elba .col_right .so_me img,
+    #ernest .col_right .so_me img,
+    #excelsior .col_right .so_me img,
+    #girlcrush .col_right .so_me img,
+    #holm .col_right .so_me img,
+    #rexen .col_right .so_me img,
+    #marcfacchini .col_right .so_me img,
+    #rebeccalou .col_right .so_me img {
+        margin: 10px 5px 10px 0;
+
+    }
+
+    #blaest .col_right .so_me a,
+    #elba .col_right .so_me a,
+    #ernest .col_right .so_me a,
+    #excelsior .col_right .so_me a,
+    #girlcrush .col_right .so_me a,
+    #holm .col_right .so_me a,
+    #rexen .col_right .so_me a,
+    #marcfacchini .col_right .so_me a,
+    #rebeccalou .col_right .so_me a {
+        margin: 0;
+
+    }
+
+    #blaest .col_right,
+    #elba .col_right,
+    #ernest .col_right,
+    #excelsior .col_right,
+    #girlcrush .col_right,
+    #holm .col_right,
+    #rexen .col_rightt,
+    #marcfacchini .col_right,
+    #rebeccalou .col_right {
+
+        flex-grow: 1;
+        flex-basis: 400px;
+        margin: 0 20px 0 0;
+    }
+
+    #blaest .col_left,
+    #elba .col_left,
+    #ernest .col_left,
+    #excelsior .col_left,
+    #girlcrush .col_left,
+    #holm .col_left,
+    #rexen .col_left,
+    #marcfacchini .col_left,
+    #rebeccalou .col_left {
+
+        flex-grow: 1;
+        flex-basis: 600px;
+        margin: 0 20px 0 0;
+    }
+
+
+
+
+
+
+
+
 
     /***** Enkelte artist sider slutter *****/
 
@@ -415,6 +933,8 @@ footer h2 {
         display: flex;
         flex-wrap: wrap;
         margin-top: 50px;
+        border: 1px solid black;
+        border-radius: 15px;
 
     }
 
@@ -432,20 +952,15 @@ footer h2 {
 
     }
 
-    #shows .col_bottom {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-basis: 300px;
 
 
-    }
 
-    #shows .col {
-        flex-grow: 1;
-        flex-basis: 70px;
-        margin: 10px;
-    }
+
+
+
+
+
+
 
 
     /***** Shows sektion slutter *****/
