@@ -59,6 +59,9 @@ table {
 }
 
 
+.hide {
+    display: none;
+}
 
 
 
@@ -193,6 +196,7 @@ footer a:hover {
 
 #landing_page .sectionwrapper .col_top {
     overflow-x: hidden;
+    z-index: -1;
 }
 
 #landing_page .hide {
@@ -227,7 +231,44 @@ footer a:hover {
     background-position: 63% 0;
 }
 
+#landing_page .dot_container {
+    margin-top: 10px;
+    text-align: center;
+}
 
+#landing_page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+#landing_page .active,
+#landing_page .dot:hover {
+    background-color: #717171;
+}
+
+
+#landing_page .fade {
+    animation-name: fade_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade_kf {
+    from {
+        opacity: .55;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
 
@@ -415,6 +456,18 @@ footer a:hover {
     margin-top: 60px;
 }
 
+#shows h2,
+#shows table {
+    margin-left: 20px;
+}
+
+#shows button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+
+}
+
 
 
 
@@ -456,6 +509,15 @@ footer a:hover {
 
 #pr_funding p {
     margin-top: 0;
+}
+
+#pr_funding .col_bottom .col .funded {
+    display: flex;
+}
+
+#pr_funding .col_bottom .col .funded .col_narrow {
+    flex-basis: 500px;
+    flex-grow: 1;
 }
 
 /****** PR and funding sektion slutter *****/
@@ -933,8 +995,6 @@ footer a:hover {
         display: flex;
         flex-wrap: wrap;
         margin-top: 50px;
-        border: 1px solid black;
-        border-radius: 15px;
 
     }
 
@@ -949,6 +1009,13 @@ footer a:hover {
         flex-wrap: wrap;
         flex-grow: 3;
         flex-basis: 300px;
+
+    }
+
+    #shows button {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
 
     }
 

@@ -1,18 +1,26 @@
 window.addEventListener("load", loadPage);
 
+
+
+var classname = document.getElementsByClassName("knap");
+
+
 function loadPage() {
     console.log("loadPage");
 
 
-    document.querySelector(".knap").addEventListener("click", showAll);
+    for (var i = 0; i < classname.length; i++) {
+        classname[i].addEventListener('click', showAll);
 
 
+    }
 
 
 }
 
 function showAll() {
     console.log("showAll");
+    this.removeEventListener("click", showAll);
     let myLength;
     myLength = this.parentElement.parentElement.parentElement.children;
 
@@ -27,12 +35,13 @@ function showAll() {
     }
     this.textContent = "Show less";
 
-    document.querySelector(".knap").addEventListener("click", showLess);
+    this.addEventListener("click", showLess);
 
 }
 
 function showLess() {
     console.log("showLess");
+    this.removeEventListener("click", showLess);
     let myLength;
     myLength = this.parentElement.parentElement.parentElement.children;
 
@@ -49,6 +58,8 @@ function showLess() {
 
     this.textContent = "Show more";
 
-    document.querySelector(".knap").addEventListener("click", showAll);
+
+    this.addEventListener("click", showAll);
+
 
 }
