@@ -638,8 +638,13 @@ footer a:hover {
     }
 
     #logo {
-        width: 40%;
-        padding: 0 40px;
+        width: 250px;
+    }
+
+
+
+    header nav a:nth-last-child(3) {
+        padding: 0;
     }
 
 
