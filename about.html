@@ -14,24 +14,38 @@
 
 <body>
     <header>
-
-
         <nav>
-            <a href="artists.html">ARTISTS</a>
+            <div class="col_menu">
+                <div id="menuknap">☰</div>
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a href="artists.html">ARTISTS</a></li>
 
-            <a href="shows.html">SHOWS</a>
 
-            <a href=index.html>
-                <img src="photos/logo.png" id="logo" alt="logo" />
-            </a>
+                <li><a href="shows.html">SHOWS</a> </li>
 
-            <a href="pr_and_funding.html">PR/FUNDING</a>
 
-            <a href="about.html">ABOUT</a>
+                <li><a href="index.html"><img src="photos/logo.png" alt="Logo">
+                        <div class="logo desktop">
+                        </div>
+                    </a>
+
+                </li>
+
+                <li> </li>
+
+                <li><a href="pr_and_funding.html">PR/FUNDING</a></li>
+
+
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
 
         </nav>
 
     </header>
+    <div class="logo mobile"></div>
+    <div class="spacer"></div>
+
     <section id="about">
         <div class="sectionwrapper">
             <h1>ABOUT US</h1>
@@ -88,7 +102,7 @@
     </section>
 
 
-    <script src=""></script>
+    <script src="menu.js"></script>
     <footer>
         <div class="col_bottom">
             <div class="col">

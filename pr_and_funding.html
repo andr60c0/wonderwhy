@@ -14,50 +14,66 @@
 
 <body>
     <header>
-
-
         <nav>
-            <a href="artists.html">ARTISTS</a>
+            <div class="col_menu">
+                <div id="menuknap">☰</div>
+            </div>
+            <ul id="menu" class="hidden">
+                <li><a href="artists.html">ARTISTS</a></li>
 
-            <a href="shows.html">SHOWS</a>
 
-            <a href=index.html>
-                <img src="photos/logo.png" id="logo" alt="logo" />
-            </a>
+                <li><a href="shows.html">SHOWS</a> </li>
 
-            <a href="pr_and_funding.html">PR/FUNDING</a>
 
-            <a href="about.html">ABOUT</a>
+                <li><a href="index.html"><img src="photos/logo.png" alt="Logo">
+                        <div class="logo desktop">
+                        </div>
+                    </a>
+
+                </li>
+
+                <li> </li>
+
+                <li><a href="pr_and_funding.html">PR/FUNDING</a></li>
+
+
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
 
         </nav>
 
     </header>
+    <div class="logo mobile"></div>
+    <div class="spacer"></div>
+
     <section id="pr_funding">
         <div class="sectionwrapper">
             <h1>PR AND FUNDING</h1>
-            <h2>PR</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat. Risus at ultrices mi tempus imperdiet nulla. Proin fermentum leo vel orci porta non. Dictum non consectetur a erat nam. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Condimentum lacinia quis vel eros donec ac odio. Accumsan lacus vel facilisis volutpat est. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Velit sed ullamcorper morbi tincidunt.</p><br>
+            <h2>A Wonderwhy PR and Funding case</h2>
+            <p>
+                In february 2018, Josa Barck came to Wonderwhy seeking help to fund and release a new album and singles in connection to the album. We managed to raise 57.000DKK to finance recordings of these and a PR campaign in USA, through Wonderwhy.
+                <br>Furthermore, by choosing Wonderwhy for PR and funding, we were able to book 3 headline shows in Denmark, 2 Festivalshows in Germany and a showcase performance at the best venue for upcoming danish artists, SPOT Festival.
+                <br>The album was reviewed by Gaffa, Bands of Tomorrow, GFR, Music for Lunch and Nordic Music Review. Both pre-singles premiered at P6-Beat and Bands of Tomorrow. On top of this we succeded by getting Josa more than 10 articles in international media and playlist adds on both radio and Spotify playlists in collaboration with our distributor Believe Digital.
+                The case shows how Wonderwhy with its combined resources are able to help you create activity and focus on your music.
+
+            </p><br>
 
             <h2>PROJECTS</h2>
             <div class=col_top>
                 <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projekt1">
+                    <img src="photos/josa_barck_cover.jpg" alt="Projekt1">
                 </div>
                 <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projekt2">
+                    <img src="photos/october_dance.jpg" alt="Projekt2">
                 </div>
                 <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projekt3">
+                    <img src="photos/cherry_blossom_kids.jpg" alt="Projekt3">
                 </div>
                 <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projek4">
+                    <img src="photos/rebecca_lou.jpg" alt="Projek4">
                 </div>
-                <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projekt5">
-                </div>
-                <div class="col">
-                    <img src="https://via.placeholder.com/2000x1500" alt="Projekt6">
-                </div>
+
+
 
             </div>
             <div class=col_bottom>
@@ -89,8 +105,28 @@
                                     Clinic Blonde – 5.000DKK.</p>
                             </div>
                         </div>
-
-
+                        <div id="video-container">
+                            <!-- Video -->
+                            <video id="video" width="640" height="365">
+                                <!---------------- no format---------
+                            <source src="videos/mikethefrog.webm" type="video/webm">
+                            <source src="videos/mikethefrog.ogv" type="video/ogv">
+                            ------------->
+                                <source src="videos/wonderwhy_interview.mp4" type="video/mp4">
+                                <p>
+                                    Your browser doesn't support HTML5 video.
+                                    <a href="videos/wonderwhy_interview.mp4">Download</a> the video instead.
+                                </p>
+                            </video>
+                            <!-- Video Controls -->
+                            <div id="video-controls">
+                                <button type="button" id="play-pause">Play</button>
+                                <input type="range" id="seek-bar" value="0">
+                                <button type="button" id="mute">Mute</button>
+                                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                                <button type="button" id="full-screen">Full-Screen</button>
+                            </div>
+                        </div>
                 </div>
             </div>
 
@@ -98,7 +134,8 @@
     </section>
 
 
-    <script src=""></script>
+    <script src="menu.js"></script>
+    <script src="pr_and_funding.js"></script>
 
     <footer>
         <div class="col_bottom">
